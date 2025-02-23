@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:c="http://www.springframework.org/schema/c"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/util
+       https://www.springframework.org/schema/util/spring-util.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <!--setter-->
+    <bean id="user1" class="com.hello.demo.spring.bean.xml.common.User">
+        <property name="name" value="user1"/>
+        <property name="age" value="18"/>
+    </bean>
+
+    <!--构造函数-->
+    <bean id="user2" class="com.hello.demo.spring.bean.xml.common.User">
+        <constructor-arg name="name" value="user2"/>
+        <constructor-arg name="age" value="11"/>
+    </bean>
+
+    <!--p命名空间-->
+    <bean id="user3" class="com.hello.demo.spring.bean.xml.common.User" p:age="19" p:name="user3">
+    </bean>
+
+    <!--c命名空间-->
+    <bean id="user4" class="com.hello.demo.spring.bean.xml.common.User" c:_0="user4" c:_1="20">
+    </bean>
+
+    <!--c命名空间-->
+    <bean id="user5" class="com.hello.demo.spring.bean.xml.common.User" c:name="user5" c:age="111">
+    </bean>
+
+    <!--特殊值-->
+    <bean id="user6" class="com.hello.demo.spring.bean.xml.common.User">
+        <property name="name">
+            <null/>
+        </property>
+        <property name="age" value="10"/>
+    </bean>
+
+    <!--转义-->
+    <bean id="user7" class="com.hello.demo.spring.bean.xml.common.User">
+        <property name="name" value="a &lt; b"/>
+        <property name="age" value="10"/>
+    </bean>
+
+    <!--CDATA-->
+    <bean id="user8" class="com.hello.demo.spring.bean.xml.common.User">
+        <property name="name">
+            <value><![CDATA[a < b]]></value>
+        </property>
+        <property name="age" value="10"/>
+    </bean>
+
+
+    <!--对象-->
+    <bean id="book1" class="com.hello.demo.spring.bean.xml.common.Book">
+        <property name="bookName" value="book1"/>
+        <property name="price" value="10"/>
+    </bean>
+
+    <!--外部bean引用-->
+    <bean id="user9" class="com.hello.demo.spring.bean.xml.common.User1">
+        <property name="name" value="user9"/>
+        <property name="age" value="18"/>
+        <property name="book" ref="book1"/>
+    </bean>
+
+    <!--内部bean-->
+    <bean id="user10" class="com.hello.demo.spring.bean.xml.common.User1">
+        <property name="name" value="user9"/>
+        <property name="age" value="18"/>
+
+        <property name="book">
+            <bean class="com.hello.demo.spring.bean.xml.common.Book">
+                <property name="bookName" value="book"/>
+                <property name="price" value="10"/>
+            </bean>
+        </property>
+    </bean>
+
+    <!--级联属性赋值-->
+    <!--Book属性要用getter-->
+    <bean id="book2" class="com.hello.demo.spring.bean.xml.common.Book">
+        <property name="bookName" value="book2"/>
+        <property name="price" value="10"/>
+    </bean>
+    <bean id="user11" class="com.hello.demo.spring.bean.xml.common.User1">
+        <property name="name" value="user9"/>
+        <property name="age" value="18"/>
+        <property name="book" ref="book2"/>
+        <property name="book.bookName" value="book"/>
+        <property name="book.price" value="10"/>
+    </bean>
+
+    <bean id="user12" class="com.hello.demo.spring.bean.xml.common.User2">
+        <!--Array-->
+        <property name="bookArray">
+            <array>
+                <bean class="com.hello.demo.spring.bean.xml.common.Book">
+                    <property name="bookName" value="book"/>
+                    <property name="price" value="10"/>
+                </bean>
+                <bean class="com.hello.demo.spring.bean.xml.common.Book">
+                    <property name="bookName" value="book"/>
+                    <property name="price" value="10"/>
+                </bean>
+            </array>
+        </property>
+
+        <!--List-->
+        <property name="bookList">
+            <list>
+                <ref bean="book1"/>
+                <ref bean="book1"/>
+                <ref bean="book1"/>
+            </list>
+        </property>
+
+        <!--Set-->
+        <property name="bookSet">
+            <set>
+                <ref bean="book1"/>
+                <ref bean="book2"/>
+            </set>
+        </property>
+
+        <!--Map-->
+        <property name="bookMap">
+            <map>
+                <entry key="book1" value-ref="book1"/>
+                <entry key="book2" value-ref="book2"/>
+            </map>
+        </property>
+
+        <property name="bookProperties">
+            <props>
+                <prop key="bookName">book</prop>
+                <prop key="price">10</prop>
+            </props>
+        </property>
+    </bean>
+
+    <!--util命名空间-->
+    <bean id="user13" class="com.hello.demo.spring.bean.xml.common.User2">
+        <property name="bookArray">
+            <array>
+                <bean class="com.hello.demo.spring.bean.xml.common.Book">
+                    <property name="bookName" value="book"/>
+                    <property name="price" value="10"/>
+                </bean>
+                <bean class="com.hello.demo.spring.bean.xml.common.Book">
+                    <property name="bookName" value="book"/>
+                    <property name="price" value="10"/>
+                </bean>
+            </array>
+        </property>
+
+        <property name="bookList">
+            <util:list>
+                <ref bean="book1"/>
+                <ref bean="book1"/>
+                <ref bean="book1"/>
+            </util:list>
+        </property>
+
+        <property name="bookMap">
+            <util:map>
+                <entry key="book1" value-ref="book1"/>
+                <entry key="book2" value-ref="book2"/>
+            </util:map>
+        </property>
+
+        <property name="bookSet">
+            <util:set>
+                <ref bean="book1"/>
+                <ref bean="book2"/>
+            </util:set>
+        </property>
+
+        <property name="bookProperties">
+            <util:properties>
+                <prop key="bookName">book</prop>
+                <prop key="price">10</prop>
+            </util:properties>
+        </property>
+    </bean>
+
+    <!--引入外部属性文件-->
+    <!--user.properties编码为utf-8-->
+    <bean id="propertyConfigurer"
+      class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+        <property name="location" value="classpath:user.properties"/>
+        <property name="fileEncoding" value="UTF-8"/>
+    </bean>
+
+    <context:property-placeholder location="classpath:user.properties"/>
+
+
+
+    <bean id="user14" class="com.hello.demo.spring.bean.xml.common.User">
+        <property name="age" value="${user.age}"/>
+        <property name="name" value="${user.name}"/>
+    </bean>
+
+    <bean id="userService" class="com.hello.demo.spring.bean.xml.common.UserService" autowire="byName"/>
+    <bean id="userDao" class="com.hello.demo.spring.bean.xml.common.UserDaoImpl1"/>
+<!--    <bean id="userDaoImpl1-2" class="com.hello.demo.spring.bean.xml.common.UserDaoImpl2"/>-->
+
+
+</beans>

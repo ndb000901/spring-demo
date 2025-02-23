@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="user1" class="com.hello.demo.spring.bean.xml.common.User3"
+    init-method="initMethod" destroy-method="destroyMethod">
+        <property name="name" value="user1"/>
+    </bean>
+
+    <!-- bean的后置处理器要放入IOC容器才能生效 -->
+    <bean id="beanProcessor" class="com.hello.demo.spring.bean.xml.common.BeanProcessor"/>
+</beans>
