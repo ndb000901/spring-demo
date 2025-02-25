@@ -1,0 +1,4 @@
+package com.hello.demo.spring.validator.service;
+
+public class User1Service2 {
+}
