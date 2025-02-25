@@ -17,6 +17,9 @@
         <module>spring-aop-annotation</module>
         <module>spring-aop-xml</module>
         <module>junit-demo</module>
+        <module>spring-resource</module>
+        <module>spring-i18n</module>
+        <module>spring-validator</module>
     </modules>
 
     <properties>
@@ -107,8 +110,17 @@
                 <scope>test</scope>
             </dependency>
 
+            <dependency>
+                <groupId>org.hibernate.validator</groupId>
+                <artifactId>hibernate-validator</artifactId>
+                <version>7.0.5.Final</version>
+            </dependency>
 
-
+            <dependency>
+                <groupId>org.glassfish</groupId>
+                <artifactId>jakarta.el</artifactId>
+                <version>4.0.2</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
     <build>
@@ -122,6 +134,7 @@
                         <target>17</target>
                         <parameters>true</parameters>
                     </configuration>
+                    <version>3.14.0</version>
                 </plugin>
             </plugins>
         </pluginManagement>
