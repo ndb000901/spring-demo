@@ -1,7 +1,7 @@
 package com.hello.demo.spring.tx.xml.controllers;
 
-import com.hello.demo.spring.jdbc.common.User;
-import com.hello.demo.spring.jdbc.service.UserService;
+import com.hello.demo.spring.tx.xml.common.User;
+import com.hello.demo.spring.tx.xml.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 

@@ -1,6 +1,7 @@
 package com.hello.demo.spring.tx.xml.dao;
 
-import com.hello.demo.spring.jdbc.common.User;
+
+import com.hello.demo.spring.tx.xml.common.User;
 
 public interface UserDao {
 
