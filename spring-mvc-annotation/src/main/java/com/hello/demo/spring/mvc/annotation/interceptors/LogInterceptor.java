@@ -1,6 +1,6 @@
 package com.hello.demo.spring.mvc.annotation.interceptors;
 
-import com.hello.demo.spring.mvc.hello.xml.common.LogData;
+import com.hello.demo.spring.mvc.annotation.common.LogData;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import org.apache.logging.log4j.LogManager;
@@ -11,6 +11,7 @@ import org.springframework.web.servlet.ModelAndView;
 public class LogInterceptor implements HandlerInterceptor {
 
     private final static Logger logger = LogManager.getLogger(LogInterceptor.class);
+
 
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
