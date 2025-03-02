@@ -1,7 +1,7 @@
 package com.hello.demo.spring.tx.annotation.dao;
 
 
-import com.hello.demo.spring.tx.xml.common.User;
+import com.hello.demo.spring.tx.annotation.common.User;
 
 public interface UserDao {
 

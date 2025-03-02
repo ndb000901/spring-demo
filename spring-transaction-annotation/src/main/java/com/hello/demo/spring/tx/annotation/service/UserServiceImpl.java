@@ -1,7 +1,7 @@
 package com.hello.demo.spring.tx.annotation.service;
 
-import com.hello.demo.spring.tx.xml.common.User;
-import com.hello.demo.spring.tx.xml.dao.UserDao;
+import com.hello.demo.spring.tx.annotation.common.User;
+import com.hello.demo.spring.tx.annotation.dao.UserDao;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

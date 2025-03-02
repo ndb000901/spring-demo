@@ -1,12 +1,13 @@
 package com.hello.demo.spring.tx.annotation.dao;
 
-import com.hello.demo.spring.tx.xml.common.User;
+import com.hello.demo.spring.tx.annotation.common.User;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
+import org.springframework.transaction.annotation.Transactional;
 
 @Repository
 public class UserDaoImpl implements UserDao {
@@ -33,7 +34,7 @@ public class UserDaoImpl implements UserDao {
         logger.info(user);
     }
 
-//    @Transactional
+    @Transactional
     @Override
     public void deleteUser(long id) {
         User user = this.getUser(id);
