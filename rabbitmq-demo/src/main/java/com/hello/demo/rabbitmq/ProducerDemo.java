@@ -5,16 +5,13 @@ import com.hello.demo.rabbitmq.common.Message;
 import com.rabbitmq.client.Channel;
 import com.rabbitmq.client.Connection;
 import com.rabbitmq.client.ConnectionFactory;
-import com.rabbitmq.client.DeliverCallback;
 
 import java.io.IOException;
-import java.nio.charset.StandardCharsets;
 import java.util.concurrent.TimeoutException;
 
-public class ConsumerDemo {
+public class ProducerDemo {
 
     public static void main(String[] args) throws IOException, TimeoutException {
-
         ConnectionFactory factory = new ConnectionFactory();
         factory.setHost("192.168.43.242");
         factory.setPort(5672);
@@ -24,15 +21,20 @@ public class ConsumerDemo {
         Connection connection = factory.newConnection();
         // 虚拟信道，复用同一tcp连接
         Channel channel = connection.createChannel();
+        // 创建交换机
+        channel.exchangeDeclare("logs", "topic", true);
+        // 创建队列
+        channel.queueDeclare("logs_info", true,false, false, null);
+        // 绑定(交换机与队列建立联系)
+        channel.queueBind("logs_info", "logs", "log.info");
 
-        DeliverCallback deliverCallback = (consumerTag, delivery) -> {
-            System.out.println("consumerTag: " + consumerTag);
-            String data = new String(delivery.getBody(), StandardCharsets.UTF_8);
-            ObjectMapper objectMapper = new ObjectMapper();
-            Message message = objectMapper.readValue(data, Message.class);
-            System.out.println("message: " + message.toString());
-        };
-        channel.basicConsume("logs_info", true, deliverCallback, consumerTag -> {});
-        channel.close();
+        Message message = new Message();
+        ObjectMapper objectMapper = new ObjectMapper();
+        String json = objectMapper.writeValueAsString(message);
+
+        // 发布消息
+        channel.basicPublish("logs", "log.info", null, json.getBytes());
+
+        connection.close();
     }
 }
