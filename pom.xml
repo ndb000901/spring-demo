@@ -25,6 +25,10 @@
         <module>spring-transaction-annotation</module>
         <module>spring-mvc-hello-xml</module>
         <module>spring-mvc-annotation</module>
+        <module>spring-amqp</module>
+        <module>rabbitmq-demo</module>
+        <module>limiter-demo</module>
+        <module>thread-demo</module>
     </modules>
 
     <properties>
@@ -174,7 +178,12 @@
                 <version>2.18.2</version>
             </dependency>
 
-
+            <!-- https://mvnrepository.com/artifact/org.springframework.amqp/spring-rabbit -->
+            <dependency>
+                <groupId>org.springframework.amqp</groupId>
+                <artifactId>spring-rabbit</artifactId>
+                <version>3.2.4</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
     <build>

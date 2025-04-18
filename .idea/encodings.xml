@@ -5,10 +5,16 @@
     <file url="file://$PROJECT_DIR$/cglib-demo/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/junit-demo/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/junit-demo/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/limiter-demo/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/limiter-demo/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/lombok-demo/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/lombok-demo/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rabbitmq-demo/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/rabbitmq-demo/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/reflect-demo/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/reflect-demo/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-amqp/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-amqp/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-aop-annotation/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-aop-annotation/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-aop-xml/src/main/java" charset="UTF-8" />
@@ -19,11 +25,25 @@
     <file url="file://$PROJECT_DIR$/spring-bean-xml/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-i18n/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-i18n/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-jdbc/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-jdbc/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-mvc-annotation/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-mvc-annotation/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-mvc-hello-xml/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-mvc-hello-xml/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-resource/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-resource/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-transaction-annotation/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-transaction-annotation/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-transaction-xml/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-transaction-xml/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-validator/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-validator/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/thread-demo/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/thread-demo/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/thread/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/thread/src/main/resources" charset="UTF-8" />
   </component>
 </project>
