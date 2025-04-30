@@ -29,6 +29,10 @@
         <module>rabbitmq-demo</module>
         <module>limiter-demo</module>
         <module>thread-demo</module>
+        <module>io-demo</module>
+        <module>net-demo</module>
+        <module>netty-demo</module>
+        <module>captcha-demo</module>
     </modules>
 
     <properties>
