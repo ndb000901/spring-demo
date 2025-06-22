@@ -33,6 +33,8 @@
         <module>net-demo</module>
         <module>netty-demo</module>
         <module>captcha-demo</module>
+        <module>mybatis-demo</module>
+        <module>collection-demo</module>
     </modules>
 
     <properties>
