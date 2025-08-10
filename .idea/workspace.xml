@@ -5,15 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3b1312d0-25cd-430f-a7c4-1ef4b09ce00a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/jmx-demo/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jmx-demo/src/main/java/com/hello/demo/jmx/JMXServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jmx-demo/src/main/java/com/hello/demo/jmx/SystemInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/jmx-demo/src/main/java/com/hello/demo/jmx/SystemInfoMBean.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-tools/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-tools/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-tools/src/main/resources/device.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-tools/src/main/resources/mybatis-generator.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -27,9 +24,10 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="customMavenHome" value="$USER_HOME$/local/maven/apache-maven-3.9.9" />
+        <option name="customMavenHome" value="$PROJECT_DIR$/../../../../local/maven/apache-maven-3.9.11" />
+        <option name="localRepository" value="$MAVEN_REPOSITORY$" />
         <option name="mavenHomeTypeForPersistence" value="CUSTOM" />
-        <option name="userSettingsFile" value="$USER_HOME$/local/maven/apache-maven-3.9.9/conf/settings.xml" />
+        <option name="userSettingsFile" value="$PROJECT_DIR$/../../../../local/maven/apache-maven-3.9.11/conf/settings.xml" />
       </MavenGeneralSettings>
     </option>
   </component>
@@ -41,26 +39,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.JMXServer.executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;dev&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/hello/code/java/spring/spring-demo&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;onboarding.tips.debug.path&quot;: &quot;/home/hello/code/java/spring/spring-demo/jmx-demo/src/main/java/com/hello/Main.java&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.JMXServer.executor": "Run",
+    "Maven.mybatis-tools [clean].executor": "Run",
+    "Maven.mybatis-tools [compile].executor": "Run",
+    "Maven.mybatis-tools [org.mybatis.generator:mybatis-generator-maven-plugin:1.3.7:generate].executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "dev",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/hello/studio/code/java/demo/spring-demo/mybatis-tools/src/main/resources",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "/Users/hello/studio/code/java/demo/spring-demo/mybatis-tools/src/main/java/com/hello/Main.java",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "MavenSettings",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RdControllerToolWindowsLayoutState" isNewUi="true">
     <layout>
       <window_info id="Bookmarks" side_tool="true" />
@@ -101,6 +106,11 @@
       <window_info anchor="right" id="Cascade" order="6" weight="0.32994792" />
       <window_info anchor="right" id="Translation.Wordbook" order="7" side_tool="true" />
     </layout>
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/mybatis-tools/src/main/resources" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="JMXServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -144,6 +154,10 @@
       <workItem from="1754815317397" duration="279000" />
       <workItem from="1754815619716" duration="328000" />
       <workItem from="1754815966007" duration="389000" />
+      <workItem from="1754817710983" duration="339000" />
+      <workItem from="1754818059811" duration="369000" />
+      <workItem from="1754818433500" duration="195000" />
+      <workItem from="1754818637110" duration="1432000" />
     </task>
     <servers />
   </component>

@@ -36,6 +36,7 @@
         <module>mybatis-demo</module>
         <module>collection-demo</module>
         <module>jmx-demo</module>
+        <module>mybatis-tools</module>
     </modules>
 
     <properties>
