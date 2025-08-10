@@ -35,6 +35,7 @@
         <module>captcha-demo</module>
         <module>mybatis-demo</module>
         <module>collection-demo</module>
+        <module>jmx-demo</module>
     </modules>
 
     <properties>
